@@ -1,0 +1,2 @@
+#spacejam test-packages  --driver-package=practicalmeteor:mocha-console-runner testcase
+MONGO_URL=mongodb://localhost:27017/test meteor test-packages --driver-package=practicalmeteor:mocha --port 3002 testcase
