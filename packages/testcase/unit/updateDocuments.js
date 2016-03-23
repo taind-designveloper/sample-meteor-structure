@@ -31,5 +31,7 @@ describe('Documents', function() {
     doc = user.documents.findOne({_id: doc._id});
     expect(doc.tags).to.include('movieX');
   });
-
+  after(function(done) {
+    Meteor.logout(done);
+  });
 });

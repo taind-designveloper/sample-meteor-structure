@@ -1,0 +1,12 @@
+dependencies:
+  cache_directories:
+    - ~/.meteor
+  override:
+    - meteor || curl https://install.meteor.com | /bin/sh
+    - meteor --version
+    - phantomjs -v
+    - npm install -g spacejam
+
+test:
+  override:
+    - spacejam test-packages --driver-package=practicalmeteor:mocha-console-runner testcase
