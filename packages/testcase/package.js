@@ -21,7 +21,6 @@ Package.onTest(function(api) {
   api.use('random');
   api.use('tracker');
   api.use('practicalmeteor:mocha');
-  api.use('practicalmeteor:mocha-console-runner');
   api.addFiles([
     'share/before.js',
   ], 'server');
