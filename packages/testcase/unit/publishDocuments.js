@@ -8,7 +8,7 @@ describe('Publish', function() {
       if(sub.ready()) {
         let num = Documents.find({}).count();
         c.stop();
-        expect(num).to.equal(3);
+        expect(num).to.equal(4);
         done();
       }
     });
